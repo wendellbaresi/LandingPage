@@ -1,0 +1,68 @@
+#home {
+    background-image: url(img/Header.png);
+    width: 100%;
+    height: 700px;
+    margin-top: -40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 8em;
+ 
+}
+
+#topo1 {
+    color: #DF6951;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo_home h1 {
+    color: #0E2651;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Volkhov', serif;
+}
+
+.titulo_desenho img {
+    width: 385px;
+    height: 12px;
+    margin-left: 260px;
+}
+
+.titulo_home {
+    display: inline-block;
+}
+
+.titulo_a {
+    display: inline-block;
+}
+
+.titulo_desenho {
+    display: block;
+}
+
+.titulo1 {
+    display: inline;
+}
+
+.conteudo_home {
+    width: 748px;
+    height: 150px;
+    color: #5E6282;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.875;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 160px;
+    padding-top: 25px;
+}
+
+.topo {
+    padding: 40px 160px;
+}
+
+.titulo_home {
+    padding-left: 160px;
+}

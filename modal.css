@@ -1,0 +1,92 @@
+
+/* JANELA MODAL COM ABERTURA DA FOTO */
+.modal-1, .modal-2, .modal-3, .modal-4, .modal-5 {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal, .modal2, .modal3, .modal4, .modal5{
+    width: 50%;
+    height: auto;
+    background-color: #ffffff9f;
+   
+    /* EFEITO VIDRO, PARA PARECER TRANSPARENTE */
+    backdrop-filter: blur(10px);
+    padding: 0.5em;
+    border-radius: 25px;
+    border: solid 0.5px rgb(165, 161, 161);
+}
+
+.modal h1, .modal2 h1, .modal3 h1, .modal4 h1, .modal5 h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    margin: 1em;
+    color: #5E6282;
+}
+
+.modal p, .modal2 p, .modal3 p, .modal4 p, .modal5 p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+    margin: 1em 5em 0 5em;
+    color: #5E6282;
+}
+
+.modal img, .modal2 img, .modal3 img, .modal4 img, .modal5 img {
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+/* BOTAO DE FECHAR A JANELA MODAL */
+.fechar, .fechar2, .fechar3, .fechar4, .fechar5{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-1.abrir, .modal-2.abrir2, .modal-3.abrir3, .modal-4.abrir4, .modal-5.abrir5{
+    display: flex;
+}
+
+@keyframes abrirModal  {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal, .abrir2 .modal-2, .abrir3 .modal3, .abrir .modal-4, .abrir5 .modal-5{
+    animation: abrirModal 0.5s;
+}
+

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Turismo Accesivel</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <!--Icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Font Awsome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Style-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <link rel="stylesheet" href="carsteam.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="dicas.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="video.css">
+
+</head>
+
+<body>
+
+    <!--NAV-BAR-->
+
+    <header class="header" id="header">
+        <nav class="menu" id="menu">
+            <div class="logotipo">
+                <div class="logo">
+                    <img src="img/logo.png" alt=""></div>
+                <div class="titulo_logo">
+                    <p>Turismo Acessível</p>
+                </div>
+            </div>
+            </div>
+            <div class="menu_lista">
+                <a class="menu-item" href="#home">Home</a>
+                <a class="menu-item" href="#dicas">Dicas</a>
+                <a class="menu-item" href="#wrapper_container">Quem somos</a>
+                <a class="menu-item" href="#slider">Melhores Destinos</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!--HOME-->
+        <section id="home">
+            <div class="topo">
+                <p id="topo1"> planeje suas viagens de maneira inclusiva </p>
+            </div>
+
+            <div class="titulo_home">
+                <div class="titulo1">
+                    <div class="titulo_desenho">
+                        <div class="titulo_b">
+                            <h1 id="titulo_b">Turismo Acessível:</h1>
+                        </div>
+                        <div class="img_titulo">
+                            <img src="img/Sublinhado.png" alt="detalhe titulo">
+                        </div>
+                    </div>
+                </div>
+                <div class="titulo3">
+                    <h1 id="titulo3"> viaje sem limites</h1>
+                </div>
+            </div>
+            <div class="conteudo_home">
+                <p>Acreditamos que viajar deve ser uma experiência enriquecedora e acessível para todas as pessoas, independentemente de suas limitações físicas, sensoriais ou mentais. Nosso objetivo é fornecer informações úteis e práticas para ajudá-lo(a)
+                    a planejar suas viagens de forma segura e confortável.</p>
+            </div>
+        </section>
+
+        <!--VIDEO-->
+
+        <section class="video">
+            <h3 class="videoh3">INCLUSÃO</h3>
+            <h1 class="videoh1">Atividades para todos</h1>
+            <div class="videoPlay">
+                <iframe width="1021.19" height="574.42" src="https://www.youtube.com/embed/DEMAPRt4xAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+
+        </section>
+
+        <!--CARROSSEL-->
+
+        <section id="slider">
+            <div class="slider_text">
+                <h1>Top</h1>
+                <h2>Melhores Destinos</h2>
+            </div>
+
+            <div class="carousel" id="carousel">
+
+                <div class="flex">
+                    <div class="flex_container">
+                        <img src="img/Praia-Para-Todos-no-Rio-de-Janeiro.jpg" alt="">
+                        <h2>RIO DE JANEIRO-RJ</h2>
+                        <p>O mais conhecido é o projeto Praia Para Todos que acontece apenas nos meses mais quentes do Rio (dezembro a abril).</p>
+                        <!--DIVI PARA ABRIR A JANELA MODAL-->
+                        <div onclick="abrirModal()" class="btn">LEIA MAIS...</div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex_container">
+                        <img src="img/foz-do-iguacu.jpg" alt="">
+                        <h2 class="flex-title">FOZ DO IGUAÇU-PR</h2>
+                        <p>E relativamente fácil encontrar vagas demarcadas, rampas nos estacionamentos, e piso tátil nas principais vias. A maioria dos pontos turísticos são adaptados o estão em processo.</p>
+
+                        <!--DIVI PARA ABRIR A JANELA MODAL-->
+                        <div onclick="abrirModal2()" class="btn">LEIA MAIS...</div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex_container">
+                        <img src="img/brotas-acessibilidade.jpg" alt="">
+                        <h2 class="flex-title">BROTAS-SP</h2>
+                        <p>Além disso, os parques de aventura da cidade vem cada vez mais investindo em acessibilidade para incluir a todos nos roteiros de ecoturismo.</p>
+
+                        <!--DIVI PARA ABRIR A JANELA MODAL-->
+                        <div onclick="abrirModal3()" class="btn">LEIA MAIS...</div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex_container">
+                        <img src="img/turismo-adaptado-no-amazonas-.jpg" alt="">
+
+                        <h2 class="flex-title">MUSEU DA CIDADE DE MANAUS-AM</h2>
+                        <p>Com ajuda da tecnologia, o Museu conta com aplicativos que estão disponíveis para acesso de uma playlist com áudio guia de todo o conteúdo que o museu oferece.</p>
+
+                        <!--DIVI PARA ABRIR A JANELA MODAL-->
+                        <div onclick="abrirModal4()" class="btn">LEIA MAIS...</div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex_container">
+                        <img src="img/acessibilidade-bonito.jpg" alt="">
+                        <h2 class="flex-title">BONITO-MS</h2>
+                        <p>Conhecida por suas belezas naturais, mostra boa vontade e empatia para garantir o livre acesso das pessoas portadoras de deficiência. </p>
+
+                        <!--DIVI PARA ABRIR A JANELA MODAL-->
+                        <div onclick="abrirModal5()" class="btn">LEIA MAIS...</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--CARS-TURS-->
+
+        <section id="modal">
+
+            <!-- JANELAS MODAL -->
+
+            <!-- JANELA MODAL 1 -->
+
+            <div>
+                <div class="modal-1" id="modal-1">
+                    <div class="modal">
+                        <button class="fechar" id="fechar">X</button>
+                        <h1>RIO DE JANEIRO</h1>
+                        <img src="img/Praia-Para-Todos-no-Rio-de-Janeiro.jpg">
+
+                        <p>O mais conhecido é o projeto Praia Para Todos que acontece apenas nos meses mais quentes do Rio (dezembro a abril).</p>
+
+                        <p>O projeto conta com esteira de acesso, cadeiras anfíbias e mais atividades como surfe e vôlei sentado, além de stand-up paddle e handbike em Copacabana.</p>
+
+                        <p>O Praia Para Todos funciona aos sábado e domingos das 09 às 14h na Praia da Barra – Posto 3 (em frente à praça do Ó); Praia de Copacabana – Posto 6 (em frente à rua Júlio de Castilhos); e na Praia do Leblon – Posto 11 – Quiosque
+                            do Riba (em frente à rua Afrânio de Mello Franco).</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- JANELA MODAL 2 -->
+
+            <div>
+                <div class="modal-2" id="modal-2">
+                    <div class="modal2">
+                        <button class="fechar2" id="fechar2">X</button>
+                        <h1>FOZ DO IGUAÇU</h1>
+                        <img src="img/foz-do-iguacu.jpg" alt="">
+
+                        <p>A cidade, por receber milhões de turistas todos anos vindo de diversos lugares do mundo para conhecer as Cataratas do Iguaçu, procura sempre desenvolver sua acessibilidade.</p>
+
+                        <p>Por lá, é relativamente fácil encontrar vagas demarcadas, rampas nos estacionamentos, e piso tátil nas principais vias. Além disso, os ônibus do transporte público contam com elevadores e a maioria dos pontos turísticos são adaptados
+                            ou estão em processo.</p>
+
+                        <p>Aqui você pode conferir mais dicas de destinos acessíveis no Brasil.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JANELA MODAL 3 -->
+            <div>
+                <div class="modal-3" id="modal-3">
+                    <div class="modal3">
+                        <button class="fechar3" id="fechar3">X</button>
+                        <h1>BROTAS</h1>
+                        <img src="img/brotas-acessibilidade.jpg" alt="">
+                        <p>Se você é aventureiro, Brotas precisa entrar no seu roteiro, afinal a cidade é conhecida como a capital nacional do turismo de aventura!</p>
+
+                        <p>Além disso, os parques de aventura da cidade vem cada vez mais investindo em acessibilidade para incluir a todos nos roteiros de ecoturismo.</p>
+
+                        <p>Por fim, vários são os parques da cidade que contam com trilhas e cachoeiras adaptadas para receber pessoas com mobilidade reduzida, além de agências especializadas em receber visitantes com mobilidade reduzida.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JANELA MODAL 4 -->
+            <div>
+                <div class="modal-4" id="modal-4">
+                    <div class="modal4">
+                        <button class="fechar4" id="fechar4">X</button>
+                        <h1>Museu de Manaus</h1>
+                        <img src="img/turismo-adaptado-no-amazonas-.jpg" alt="">
+                        <p>O Museu da Cidade de Manaus, localizado no Paço da Liberdade, Centro Histórico, conta a história do povo manauara.</p>
+
+                        <p>Com ajuda da tecnologia, aplicativos estão disponíveis para acesso de uma playlist com áudio guia de todo o conteúdo que o museu oferece.</p>
+
+                        <p> O lugar dispõe de monitores treinados para receber os visitantes e promover um dia de aprendizado e interação com a cultura e história do Estado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JANELA MODAL 5 -->
+            <div>
+                <div class="modal-5" id="modal-5">
+                    <div class="modal5">
+                        <button class="fechar5" id="fechar5">X</button>
+                        <h1>Bonito MS</h1>
+                        <img src="img/acessibilidade-bonito.jpg" alt="">
+                        <p>Cidade localizada na região sudoeste de Mato Grosso do Sul é mundialmente conhecida por suas belezas naturais e mostra boa vontade e empatia para garantir a democracia e o livre acesso das pessoas portadoras de deficiência a várias
+                            atividades e lugares que quiserem ir. </p>
+
+                        <P>Em Bonito uma pessoa com deficiência física consegue realizar várias atividades. Todos os balneários como o Refúgio da Barra, Estrela do Formoso, Eco Park Porto da Ilha, Praia da Figueira e Nascente Azul são estruturados para receber
+                            esses visitantes, que podem passar um dia lindo se refrescando nas límpidas águas da cidade conhecida como a Capital do Ecoturismo.</P>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--DICAS-->
+        <section class="dicas_container" id="dicas">
+            <div class="dicas_row">
+                <div class="heading">
+                    <h1>Dicas</h1>
+                    <h2>O que você precisa saber para ter uma viagem bem-sucedida:</h2>
+
+                    <div class="column">
+
+                        <div class="row">
+                            <div class="container_vector">
+                                <img class="vector_1" src="img/Vector.png" alt="">
+                            </div>
+                            <div class="text_container">
+                                <h3>Preparação para a viagem:</h3>
+                                <p>É importante entrar em contato com a companhia de transporte com antecedência para informar sobre suas necessidades e solicitar assistência especial, se necessário. Também é importante trazer todos os equipamentos e suprimentos
+                                    médicos necessários, como medicamentos, cadeira de rodas, bengalas, órteses, entre outros.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="container_vector">
+                                <img class="vector_2" src="img/Vector (1).png" alt="">
+                            </div>
+                            <div class="text_container">
+                                <h3>Direitos em viagens aéreas:</h3>
+                                <p>Direitos em viagens aéreas: A Lei Brasileira de Inclusão (Lei nº 13.146/2015) garante o direito de acessibilidade para PCD em voos, incluindo a oferta de assistência especial, embarque prioritário, acesso ao banheiro a
+                                    bordo, entre outros. Também é possível solicitar cadeira de rodas para o transporte dentro do aeroporto.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="container_vector">
+                                <img class="vector_3" src="img/Vector (2).png" alt="">
+                            </div>
+                            <div class="text_container">
+                                <h3>Direitos em viagens de ônibus:</h3>
+                                <p>A Resolução nº 4.799/2015 da ANTT (Agência Nacional de Transportes Terrestres) estabelece as regras para a acessibilidade em viagens de ônibus, incluindo a oferta de poltronas especiais, rampas de acesso, banheiros acessíveis,
+                                    entre outros.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="container_vector">
+                                <img class="vector_3" src="img/Vector (2).png" alt="">
+                            </div>
+                            <div class="text_container">
+                                <h3>Direitos em viagens de trem:</h3>
+                                <p>A Lei nº 13.146/2015 também garante o direito de acessibilidade para PCD em viagens de trem, incluindo a oferta de assistência especial, acesso a plataformas e vagões acessíveis, entre outros.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="main_img">
+                        <div class="img_item"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!--CARS_TEAM-->
+        <section id="wrapper_container">
+            <div class="wrapper">
+                <div class="wrapper_text">
+                    <h1>Quem Somos</h1>
+                    <h2>Membros do time</h2>
+                </div>
+
+
+                <div class="our_team">
+                    <!--Team 1-->
+                    <div class="team_member">
+                        <div class="member_img">
+                            <img src="team/wendell.png" />
+                            <div class="social_media">
+                                <div class="item">
+                                    <a href="https://www.linkedin.com/in/wendellbaresi/" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://github.com/wendellbaresi" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Wendell Santos</h3>
+                        <p>Lider Team</p>
+                    </div>
+
+
+                    <!--Team 2-->
+                    <div class="team_member">
+                        <div class="member_img">
+                            <!--member-img-->
+                            <img src="team/Allan.png" />
+                            <div class="social_media">
+                                <div class="item">
+                                    <a href="https://www.linkedin.com/in/allan-alex-b5b904111/" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://github.com/trimegistro3" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Allan Alex</h3>
+                        <p>Scrum Master</p>
+                    </div>
+
+
+                    <!--Team 3-->
+                    <div class="team_member">
+                        <div class="member_img">
+                            <!--member-img-->
+                            <img src="team/rina.png" />
+                            <div class="social_media">
+                                <div class="item">
+                                    <a href="https://www.linkedin.com/in/rina-velasquez-frontend-developer-jr/" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://github.com/rinvel7" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Rina Velasquez</h3>
+                        <p>Developer</p>
+                    </div>
+
+
+                    <!--Team 4-->
+                    <div class="team_member">
+                        <div class="member_img">
+                            <!--member-img-->
+                            <img src="team/joao.png" />
+                            <div class="social_media">
+                                <div class="item">
+                                    <a href="https://www.linkedin.com/in/jo%C3%A3o-mota-85ab3224a/" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://github.com/jaoedu" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>João Mota</h3>
+                        <p>Developer</p>
+                    </div>
+                </div>
+
+                <div class="our_team">
+
+                    <!--Team 5-->
+                    <div class="team_member">
+                        <div class="member_img">
+                            <!--member-img-->
+                            <img src="team/Francis.png" />
+                            <div class="social_media">
+                                <div class="item">
+                                    <a href="https://www.linkedin.com/in/francis-cantarelli-4a3b5012a" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://github.com/newfrancis79" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Francis Cantarelli</h3>
+                        <p>Developer</p>
+                    </div>
+
+
+                    <!--Team 6-->
+                    <div class="team_member">
+                        <div class="member_img">
+                            <!--member-img-->
+                            <img src="team/vagner.png" />
+                            <!-- <div class="social_media">
+                                <div class="item">
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                </div>
+                                <div class="item">
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                </div>                          
+                            </div> -->
+                        </div>
+                        <h3>Vagner Serafim </h3>
+                        <p>Developer</p>
+                    </div>
+
+
+                    <!--Team 7-->
+                    <div class="team_member">
+                        <div class="member_img">
+                            <!--member-img-->
+                            <img src="team/ana.png" />
+                            <!--  <div class="social_media">
+                                <div class="item">
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                </div>
+                                <div class="item">
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                </div>                          
+                            </div> -->
+                        </div>
+                        <h3>Ana Paula Micalczuk</h3>
+                        <p>Developer</p>
+                    </div>
+                    <!--Team 8-->
+                    <div class="team_member">
+                        <div class="member_img">
+                            <!--member-img-->
+                            <img src="team/Rodrigo.png" />
+                            <div class="social_media">
+                                <div class="item">
+                                    <a href="https://www.linkedin.com/in/rodrigo-sandes-53291b124/" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <h3>Rodrigo Sandes</h3>
+                        <p>Developer</p>
+                    </div>
+
+                </div>
+
+        </section>
+
+        <!-- -- Mapa -- -->
+
+        <section class="map" id="map">
+            <h3 class="map_titulo">Mapa</h3>
+            <h1 class="map_text">Encontre locais próximos a você</h1>
+
+            <div class="map_button">
+                <!-- <div class="map_button_lat">   
+                    <input type="text" id="lat" name="lat" class="form-control" placeholder="Latitud" >
+                </div>
+                <div class="map_button_lng">   
+                    <input type="text" id="lng" name="lng" class="form-control" placeholder="Longitud">
+                </div>
+              <div class="map_button_send">
+                    <button id="send_coordinates" class="btn_send">Enviar Coordenadas</button>
+                </div> -->
+            </div>
+            <div class="map_container"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer_logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class=f ooter_titulo>
+            <p>Turismo Acessível</p>
+        </div>
+        <nav class="footer_menu">
+            <a class="menu-item" href="#home">Home</a>
+            <a class="menu-item" href="#dicas">Dicas</a>
+            <a class="menu-item" href="#wrapper_container">Quem somos</a>
+            <a class="menu-item" href="#slider">Melhores Destinos</a>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script src="menu.js"></script>
+    <script src="carrossel.js"></script>
+    <script src="carstur.js"></script>
+    <!--   <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script> -->
+
+</html>

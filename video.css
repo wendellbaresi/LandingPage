@@ -1,0 +1,41 @@
+
+
+.video {
+   
+    background-image: url(img/section\ 10.png);
+    width: 100%;
+    height: 840px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  
+}
+
+.videoh3 {
+    color: #FFA90F;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.videoh1 {
+    padding-top: 1vw;
+    text-align: center;
+    justify-content: center;
+    color: #0E2651;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Volkhov', serif;
+}
+
+.videoPlay {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 960px;
+    margin-top: 2em;
+}
+

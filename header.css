@@ -1,0 +1,89 @@
+.menu {
+    position: fixed;
+    z-index: 2000;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    transition: background-color 0.5s ease;
+}
+
+
+
+.menu_lista{
+    display: flex;
+
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 1.5em;
+}
+
+
+.menu-item:hover{
+    color: #FFA90F;
+} 
+
+
+.logotipo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logotipo img {
+    width: 60px;
+    height: 60px;
+ 
+}
+
+.titulo_logo {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    color: #2D2D2D;
+    margin: 0 0.25em;
+}
+
+ /* Estilos para a classe que altera a cor do elemento de menu */
+ .menu-scroll {
+    background-color: #fff;
+    
+  }
+
+  /* Estilos para a classe que altera a logo do elemento de menu */
+  .menu-logo2 {
+    
+    background-color: rgb(0, 99, 128); 
+
+}
+
+
+@media (max-width: 1535px){
+    .header{
+        padding: 1em 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px){
+    section{
+        padding: 0.12%;
+        transition: 2s;
+    }
+}
+
+@media (max-width: 1250px){
+
+}
